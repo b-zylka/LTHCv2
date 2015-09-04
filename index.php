@@ -326,19 +326,6 @@
         <p><strong>Please <a href='mailto:bobdole@email.com?subject=Health Score Website Request'>let me know</a> any features you'd like to see added and/or any bugs you find.</strong></p>
     </div>
 
-      <!-- Create table for top 10 active devices? -->
-      <!-- server versus workstation identification -->
-      <!-- server detected roles? -->
-      <!-- Create table for current open alert and CW ticket number/link -->
-      <!-- Create table for scheduled reports, time, freq, and contact -->
-      <!-- create table for patch email notification -->
-      <!--<div style="margin: 100px 0 100px 0; padding-left:30%;">
-        <img src="images/tbrun1.png" height="185px" width="402px"></img>
-      </div> -->
-
-
-
-
     <div id="tab2">
       <div id="hcTabs">
         <ul>
@@ -404,11 +391,6 @@
               <li><a href="http://download.microsoft.com/download/4/c/b/4cb845e7-1076-437b-852a-7842a8ab13c8/OneCareCleanUp.exe" class="av" target="blank">Link</a> | Windows Live OneCare</li>
             </ul>
 
-            <!--<div id="sFJ" style="width:40%; float:right; z-index: 10; position: absolute; top:50px; right:20px;">
-
-            </div>-->
-        <!--<hr>
-        <p><strong>Please <a href='mailto:brandonz@marconet.com?subject=Health Score Website Request'>let me know</a> any additional links or downloads to add.</strong></p>-->
         </div>
         <div id="tab32">
           <!-- LT Agent Download Tab -->
