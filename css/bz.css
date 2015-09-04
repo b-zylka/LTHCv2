@@ -1,0 +1,441 @@
+html, body {
+	background-color: #222222;
+        margin: 0px;
+        background: #838b8b url(../images/bg-main-grey.jpg) top center no-repeat fixed;
+        font-family: Helvetica, sans-serif;
+        font-size: 95%;
+}
+img {
+	border-style: none;
+}
+#sb-site {
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3); /* Shadow cast onto the slidebars when opened. */
+	padding: 0 50px 30px 0;
+	width: 100%;
+}
+#main-content {
+        width:60%;
+	padding:10px;
+        padding-left:6%;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+}
+#main-right {
+	width: 300px;
+	padding:10px;
+	padding-right:6%;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main-filterTable {
+	width: 300px;
+}
+#weatherDiv {
+	width: 300px;
+	margin-left: 400px;
+	position: absolute;
+}
+#main-right-filter-weather {
+	margin-bottom:50px;
+}
+
+#main-content-trend {
+	width:40%;
+	padding:5px;
+	padding-left:6%;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: auto;
+}
+#main-right-trend {
+	width: 40%;
+	padding:5px;
+	padding-right:6%;
+	float: right;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main-content-trend-header {
+	width: 100%;
+	margin-top: 20px;
+	padding: 15px;
+	margin-left: 5%;
+}
+#idx-left {
+        width: 30%;
+        padding:10px;
+        /*float: left;*/
+}
+#sb-site a:link, a:visited, a:active {
+		transition: color .2s ease-in;
+		transition-property: color;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-in;
+		transition-delay: initial;
+		text-decoration: none;
+		color: #333333;
+}
+#sb-site a:hover {
+color: #fdb915;
+		/*color: #ceae00;*/
+}
+                
+.toggle-check {
+	 overflow: auto;
+	 clear: both;
+	 bottom:10%;
+	 left:0;
+	 text-align: left;
+	 position: absolute;
+	 z-index: 99997;
+}
+	 
+.number_range_filter {
+	width: 20px;
+}
+	
+#adverts {
+	margin-top: 20px;
+}
+.advert {
+	border-radius: 3px;
+	border: 1px solid #727272;
+	margin-bottom: 10px;
+	padding: 3px;
+}
+.navbar {
+	box-shadow: /* Shadow beneath the bar and edge highlights. */
+		/* Layered single pixel shadows to create a one sided shadow effect. */
+		0 5px 0 0 rgba(0, 0, 0, 0.01),
+		0 4px 0 0 rgba(0, 0, 0, 0.02),
+		0 3px 0 0 rgba(0, 0, 0, 0.04),
+		0 2px 0 0 rgba(0, 0, 0, 0.06),
+		0 1px 0 0 rgba(0, 0, 0, 0.08),
+		/* Top highlight */
+		0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Left highlight */
+		1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Right highlight */
+		-1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Bottom lowlight */
+		0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+		
+	/* Glass gradient overlay. */
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255, 0.05) 50%, rgba(0,0,0, 0.02) 51%); /* Webkit syntax. */
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 50%, rgba(0, 0, 0, 0.02) 51%); /* Final syntax. */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+	/* Bootstrap Changes */
+	border: none;
+	width: 100%;
+	left: auto;
+	right: auto;
+}
+#logo {
+	margin-top: 4px;
+	text-align: center;
+}
+#top-arrow {
+	padding-top: 17px;
+	padding-bottom: 13px;
+}
+.navbar .sb-toggle-left {
+	width: 58px;
+	float: left;
+	padding: 14px;
+}
+.navbar .sb-toggle-right {
+	width: 58px;
+	float: right;
+	padding: 14px;
+}
+.sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+	cursor: pointer;
+}
+.sb-right {
+	margin-top: 50px;
+}
+.navicon-line {
+	width: 24px;
+	height: 4px;
+	border-radius: 1px;
+	margin-bottom: 3px;
+	background-color: #fff;
+}
+ul.navbar-nav {
+	display: none;
+}
+footer {
+	margin-top: 30px;
+}
+/* Slidebars */ .sb-slidebar {
+	background-color: #222222;
+}
+/* ---------------
+ * 003 - Slidebars
+ */ .sb-slidebar {
+	background-color: #222222; /* Background colour. */
+	color: #e8e8e8; /* Text colour. */
+}
+.sb-slidebar a {
+	color: #FF3971;
+	text-decoration: none;
+}
+.sb-slidebar a:hover {
+	color: #FDB915; /* Link hover colour. e83165 */
+	text-decoration: underline;
+}
+/* Main Menu */ .sb-menu { /* Apply to <ul> or <ol>. */
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.sb-menu li {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background colour you set. */
+}
+.sb-menu > li:first-child {
+	border-top: none; /* Removes top border from first list item.. */
+}
+.sb-menu > li:last-child {
+	border-bottom: none; /* Removed bottom border from last list item. */
+}
+.sb-menu li a {
+	width: 100%; /* Makes links full width. */
+	display: inline-block;
+	padding: 1em; /* Creates an even padding the same size as your font. */
+	color: #f2f2f2;
+}
+.sb-menu li a:hover {
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
+}
+/* Borders */ .sb-left .sb-menu li a {
+	border-left: 3px solid transparent;
+}
+.sb-left .sb-menu li a:hover {
+	border-left: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+.sb-right .sb-menu li a {
+	border-right: 3px solid transparent;
+}
+.sb-right .sb-menu li a:hover {
+	border-right: 3px solid; /* Removes transparent colour, so border colour will be the same as link hover colour. */
+}
+/* Left */ .sb-menu li .sb-open-right, .sb-menu li small {
+	display: inline-block;
+	padding: 14px;
+}
+.sb-menu li img {
+	margin: 14px;
+}
+/* Right */ aside#about-me {
+	padding: 14px 14px 14px 14px;
+}
+img.img-me {
+	margin: 14px auto;
+	border: 4px solid #fff;
+}
+/* Slidebar Type */ .sb-slidebar, .sb-slidebar h3 {
+	color: #F0F0F0;
+}
+.sb-slidebar ul.sb-nav li a {
+	color: #DEDEDE;
+}
+.sb-slidebar ul.sb-nav li a:hover {
+	color: #C7C7C7;
+	text-decoration: none;
+}
+.sb-slidebar ul.sb-nav li span:hover {
+	color: #C7C7C7;
+}
+/* Anchor Links */
+#download, #api, #options, #helper-classes {
+	margin-top: -50px;
+	padding-top: 50px;
+}
+/* Helper Classes */ .add-bottom-margin {
+	margin-bottom: 15px;
+}
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+.add-top-margin {
+	margin-top: 15px;
+}
+.no-top-margin {
+	margin-top: 0;
+}
+.push-down {
+	position: relative;
+	top: 2px;
+}
+@media (min-width: 768px) {
+	ul.navbar-nav {
+		display: block;
+	}
+	
+	#logo {
+		text-align: left;
+	}
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+#bisma {
+	margin: 50px 0;
+}
+#bisma h2 {
+	font-weight: 300;
+	color: #f71756;
+}
+#bisma p {
+	font-weight: 300;
+	font-size: 15px;
+	color: #646a73;
+}
+#bisma p.lead {
+	font-size: 24px;
+	color: #646a73;
+}
+.img-responsive-stretch {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#manhattan {
+	
+}
+#manhattan a {
+	text-decoration: none;
+}
+#manhattan a:hover {
+	text-decoration: none;
+}
+#manhattan #mhtn-img {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+	background-image: url('images/manhattan-banner.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#manhattan p.lead {
+	color: #d57597;
+	text-align: center;
+}
+/*
+@font-face {
+    font-family: 'weather';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#weather {
+  width: 100%;
+  background: #1192d3;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+i {
+  color: #fff;
+  font-family: weather;
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#weather .currently {
+  margin: 0 20px;
+}*/

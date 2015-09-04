@@ -1,0 +1,403 @@
+/*
+
+Copyright 2013 Sangoma Partners, LLC
+
+ - Common CSS for StatusDashboard
+
+*/
+
+
+/* GLOBAL FONT */
+
+/* Dashboard table */
+table.dashboard {
+  /*border-collapse: collapse;*/
+  border-collapse: separate;
+  box-shadow: 0 2px 5px 1px #ddd;
+  -webkit-box-shadow: 0 2px 5px 1px #ddd;
+  -moz-box-shadow: 0 2px 5px 1px #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 0px;
+}
+table.dashboard td {
+  text-align: center;
+}
+table.dashboard th.status {
+  width: 35px;
+}
+table.dashboard td.status {
+  width: 35px;
+}
+table.dashboard th.service {
+  border-right: 1px solid #ddd;
+  width: 210px;
+}
+table.dashboard td.service {
+  text-align: left;
+  border-right: 1px solid #ddd;
+  width: 210px;
+}
+table.dashboard th.service_group {
+  border-right: 1px solid #ddd;
+  width: 190px;
+}
+table.dashboard td.service_group {
+  text-align: left;
+  border-right: 1px solid #ddd;
+  width: 190px;
+}
+table.dashboard th.date {
+  width: 75px;
+}
+table.dashboard td.date {
+  width: 75px;
+}
+table.dashboard_small {
+  border-collapse: separate;
+  box-shadow: 0 2px 5px 1px #ddd;
+  -webkit-box-shadow: 0 2px 5px 1px #ddd;
+  -moz-box-shadow: 0 2px 5px 1px #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 0px;
+}
+table.dashboard_small th.service {
+  max-width: 200px;
+  border-right: 1px solid #ddd;
+}
+table.dashboard_small td.service {
+  text-align: left;
+  border-right: 1px solid #ddd;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+/* SPANs */
+/* Small text */
+span.small {
+   font-size: 12px;
+}
+/* Pagination Links */
+span.navigation {
+   font-size: 12px;
+   font-weight: bold;
+}
+/* Counters */
+span.counter {
+   font-size: 12px;
+   color: blue;
+   padding-bottom: 2px;
+}
+/* inline element for displaying success messages */
+span.success {
+   color: #16AF48 !important;
+   font-weight: bold;
+   font-size: 12px;
+}
+/* inline element for displaying error messages */
+span.err {
+   font-size: 12px;
+   font-weight: bold;
+   color: red !important;
+}
+/* inline element for displaying error messages (large) */
+span.err_lg {
+   font-size: 14px;
+   font-weight: bold;
+   color: red;
+}
+/* Green circle indicators */
+span.foundicon_container_green {
+   /*position: relative;*/
+   font-size: 16px;
+   color: #00B050;
+   bottom: -2px;
+}
+/* Blue circle indicators */
+span.foundicon_container_blue {
+   /*position: relative;*/
+   font-size: 16px;
+   color: #558ED5;
+   bottom: -2px;
+}
+/* Orange circle indicators */
+span.foundicon_container_orange {
+   /*position: relative;*/
+   font-size: 16px;
+   color: #FFB805;
+   bottom: -2px;
+}
+/* Red circle indicators */
+span.foundicon_container_red {
+   /*position: relative;*/
+   font-size: 16px;
+   color: #FF0000;
+   bottom: -2px;
+}
+/* Navigation links on the dashboard table */
+.foundicon_container_nav {
+   position: relative;
+   font-size: 30px;
+}
+/* Navigation links on the dashboard page that are part of the timelines */
+.foundicon_container_nav_tl {
+   position: relative;
+   bottom: -3px;
+   font-size: 18px;
+}
+/* Info links on the dashboard services */
+.foundicon_container_db_svcs {
+   position: relative;
+   font-size: 17px;
+   bottom: -2px;
+   padding-left: 2px;
+}
+/* Navigation links on the dashboard table (calendar) */
+.foundicon_container_nav_cal {
+   position: relative;
+   font-size: 28px;
+   cursor: pointer;
+}
+/* General formatting where foundicons are used for links */
+.foundicon_container_iconlink {
+   position: relative;
+   font-size: 23px;
+}
+/* Foundicon calendar icon (which appears smaller than standard) */
+.foundicon_container_iconlink_cal {
+   position: relative;
+   font-size: 27px;
+   bottom: -1px;
+}
+/* Formatting where foundicons are used in the footer */
+.foundicon_container_iconlink_footer {
+   position: relative;
+   font-size: 25px;
+   bottom: -6px;
+}
+/* General formatting where foundicons are used for links */
+.foundicon_container_iconlink_large_trash {
+   position: relative;
+   font-size: 25px;
+}
+/* Foundicon event update delete trash icon */
+.foundicon_container_iconlink_small_trash {
+   position: relative;
+   font-size: 20px;
+   bottom: -3px;
+   right: 2px;
+}
+/* Foundicon event update delete trash icon */
+.foundicon_container_iconlink_refresh {
+   position: relative;
+   font-size: 22px;
+   bottom: -4px;
+}
+/* Expand/Collapse details link */
+span.foundicon_container_expand {
+   position: relative;
+   bottom: -3px;
+   padding-left: 1px;
+   cursor: pointer;
+}
+/* Escalation Arrow */
+span.foundicon_container_escalate {
+   position: relative;
+   bottom: -5px;
+   font-size: 20px;
+   color: red;
+}
+/* Key dropdown links (anywhere but the dashboard) */
+.foundicon_container_key {
+   position: relative;
+   bottom: -7px;
+   font-size: 25px;
+   color: #DDDDDD;
+}
+/* Key dropdown link for escalation path */
+.foundicon_container_escalation_key {
+   position: relative;
+   font-size: 25px;
+}
+/* Delete confirmation icon */
+.foundicon_container_delete {
+   position: relative;
+   bottom: -5px;
+   font-size: 28px;
+   color: red;
+}
+/* Admin alert */
+.foundicon_container_limits_alert {
+   position: relative;
+   bottom: -2px;
+   font-size: 20px;
+   color: red;
+}
+.foundicon_container_limits_check {
+   position: relative;
+   bottom: -2px;
+   font-size: 20px;
+   color: #00B050;
+}
+/* Landing Page Features */
+i.features {
+  color: #00B050;
+  font-size: 26px
+}
+/* Side Nav Sub Menu */
+span.submenu_triangle:before {
+  font-size: 18px;
+  content: '\2023';
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+
+
+
+/* Dashboard legend */
+span.legend {
+   font-size: 12px;
+}
+/* Footer styling */
+span.footer_small {
+   font-size: 9px;
+}
+span.footer_large {
+   font-size: 11px;
+}
+/* Index page heading styling */
+span.heading_label {
+   font-size: 15px;
+   font-weight: bold;
+   color: #616161;
+}
+/* Index page messages when no incidents/maintenances */
+span.all_good {
+   color: #16AF48;
+   font-size: 14px;
+}
+/* Help Dropdowns */
+span.help_drop {
+   font-size: 12px;
+}
+/* Dashboard Indicator Dropdowns */
+span.dashboard_drop {
+   font-size: 12px;
+}
+/* Dashboard timeline formatting */
+span.timeline {
+   font-size: 12px;
+}
+/* Event updates listing formatting */
+span.updates {
+   font-size: 12px;
+}
+/* Mobile dashboard statuses */
+span.mobile_red {
+   color: #FF0000;
+}
+span.mobile_blue {
+   color: #558ED5;
+}
+span.mobile_green {
+   color: #00B050;
+}
+
+/* Help */
+span.help {
+  background: #dadada;
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 11px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+span.help_question {
+  color: #005596;
+  font-weight: bold;
+  background: #dadada;
+  border-radius: 3px;
+  padding: 1px 3px 0px 3px;
+  font-size: 11px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+i.more_info, span.more_info a {
+  color: #005596 !important;
+  font-weight: bold;
+  background: #fff;
+  padding: 1px 3px 0px 3px;
+  font-size: 11px;
+}
+i.more_info_green, span.more_info_green a {
+  color: #00B050 !important;
+  background: transparent !important;
+  font-weight: bold;
+  padding: 1px 3px 0px 3px;
+  font-size: 11px;
+}
+i.more_info_red, span.more_info_red a {
+  color: red !important;
+  font-weight: bold;
+  background: #fff;
+  padding: 1px 3px 0px 3px;
+  font-size: 11px;
+}
+/* Documentation Emphasis */
+span.doc_emp {
+  background: #dadada;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 3px 3px 3px 3px;
+  font-size: 12px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+span.incident {
+  color: red !important;
+}
+span.maintenance {
+  color: #558ED5 !important;
+}
+span.blog_author {
+  font-size: 11px;
+}
+span.blog_title {
+  color: #656565;
+  font-size: 22px;
+}
+/* JS Switcher styling */
+span.switcher-left {
+   font-size: 14px;
+   color: #656565;
+   padding-right: 5px;
+   font-weight:bold;
+}
+span.switcher-right {
+   font-size: 14px;
+   color: #656565;
+   padding-left: 5px;
+   font-weight:bold;
+}
+
+/* Jquery-ui accordion */
+.ui-accordion .ui-accordion-content {
+  padding: 12px 12px 0px 12px;
+  background-color: #f6f6f6;
+}
+.ui-accordion-content-subscribe {
+  background-color: #ffffff !important;
+}
+.ui-accordion .ui-accordion-header, .ui-accordion .ui-accordion-content  {
+  border: 1px solid #ddd;
+}
+.ui-widget-content {
+  background: 0;
+}
