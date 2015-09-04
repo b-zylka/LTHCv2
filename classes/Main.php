@@ -60,7 +60,7 @@ class Main {
 		if ($type === 'footer') {
       echo "
       <div id='theFooter'>
-        <hr>Copyright &copy; 2015 <a href='http://www.marconet.com/' class='foot'>marconet.com</a>
+        <hr><img src='images/tug.png' height='16' width='16'> Copyright &copy; 2015 <a href='http://www.marconet.com/' class='foot'>marconet.com</a>
       </div>
       <script src='js/jquery.simpleWeather.js'></script>
       <!--<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true'></script>-->
