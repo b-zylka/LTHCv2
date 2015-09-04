@@ -414,34 +414,7 @@
           <!-- LT Agent Download Tab -->
         </div>
         <div id="tab33">
-          <?php
-          $service_url = 'http://status.statusdashboard.com/api/v1/dashboard/';
-          $response = \Httpful\Request::get($service_url)->expectsType('json')->send();
-          //echo $response->body->objects[0]->status;
-          $tot = count($response->body->objects)-1;
-          ?>
-          <h3>Service Status</h3>
-          <table id='statusDash2' class='stripe compact statusDash2' cellspacing='0' width='100%'>
-            <thead>
-              <tr>
-                <th style='text-align: left;'>System</th>
-                <th style='text-align: left;'>Service Name</th>
-                <th style='text-align: center; width: 120px;'>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php
-              for($x = 0; $x <=$tot; $x++){
-                if($response->body->objects[$x]->status) {$status = "<img src='images/check_256.png' height='16' width='16'>";} else {$status = "<img src='images/cancel_256.png' height='16' width='16'>";}
-                echo "
-                <tr>
-                  <td>".$response->body->objects[$x]->group."</td>
-                  <td>".$response->body->objects[$x]->service_name."</td>
-                  <td style='text-align:center;'>".$status."</td>
-                </tr>
-                ";}?>
-            </tbody>
-          </table>
+
 
         </div>
       </div>
