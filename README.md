@@ -1,4 +1,4 @@
-# LTHCv2# LabTech Score Web Portal (LTHC)
+# LTHCv2 LabTech Score Web Portal (LTHC)
 
 This is an extension of the original code base redesigned and optimized for better performance and greater metric integrity with the help of Kyle.  Queries have been updated an extensive code overhaul completed.  There's likely many, many files not in use that will be cleaned out over time in the js and css directories.  This will be the intermediate solution while Admiral Spooner is completing the modular EPiCENTER solution.
 
