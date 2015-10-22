@@ -24,7 +24,7 @@ You need the appropriate table structure in place for data to be returned.  Plea
 <li>Create one stored procedure named "sp_plugin_UpdateScores"</li>
 <li>Create three scheduled events named "ev_lthcUpdate_xxxx"</li>
 <li>Enable global event scheduler (Please edit your my.ini!)</li>
-<ul><li>Add "event_schedule=ON" to your my.ini otherwise scores will not be updated via the events on a daily/weekly/monthly schedule</li>
+<ul><li>Add "event_scheduler=ON" to your my.ini otherwise scores will not be updated via the events on a daily/weekly/monthly schedule</li>
 <li>Default location for your my.ini is "%programfiles%\MySQL\my.ini"</li>
 </ul>
 <li>Three additional EDF's on the Agent Scope tab of Clients</li>
