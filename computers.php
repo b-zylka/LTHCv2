@@ -381,8 +381,8 @@ $hcDetail20->execute(array('computerid' => $computerid));
         $pbAVG = $v['Avg_Score'];
       }
 
-      $pbc = $pdo->prepare("SELECT * FROM plugin_lthc_scores_computers WHERE computerid = :computerid");
-      $pbc->execute(array('computerid' => $computerid));
+      $pbc = $pdo->prepare("SELECT * FROM plugin_lthc_scores WHERE clientid = :clientid");
+      $pbc->execute(array('clientid' => $clientid));
       foreach($pbc as $v) {
         $pbcAV = $v['Antivirus'];
         $pbcDSK = $v['Disk'];
