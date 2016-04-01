@@ -485,7 +485,7 @@ $.simpleWeather({
 var hcAVG = {
   chart: {renderTo: 'hcAVG', type: 'spline', zoomType: 'x', resetZoomButton: {position: {x: 0, y: -30}}},
   title: {text: '<?php echo $clientName ?> Health Score Trending', x: -20},
-  subtitle: {text: 'Last 180 Days', x: -20},
+  subtitle: {text: 'Last 360 Days', x: -20},
   xAxis: {categories: [], title: {text: 'Date'}},
   yAxis: {title: {text: 'Score'}, plotLines: [{value: 0, width: 1, color: '#808080'}]},
   legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle', borderWidth: 0},
