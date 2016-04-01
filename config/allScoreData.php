@@ -6,7 +6,7 @@ header("Content-Type: application/json");
 //$sql = "SELECT round(avg(antivirus),1) as antivirus, round(avg(disk),1) as disk, round(avg(intrusion),1) as intrusion, round(avg(usability),1) as usability, round(avg(services),1) as services, round(avg(updates),1) as updates, round(avg(`event_log`),1) as events, round(avg(`avg_score`),1) as overall, MONTHNAME(checkdate) AS month, month(checkdate) as mnthorder FROM plugin_lthc_scores_monthly group by month order by mnthorder asc";
 
 # Weekly Query
-$sql = "SELECT round(avg(antivirus),1) as antivirus, round(avg(disk),1) as disk, round(avg(intrusion),1) as intrusion, round(avg(usability),1) as usability, round(avg(services),1) as services, round(avg(updates),1) as updates, round(avg(`event_log`),1) as events, round(avg(`avg_score`),1) as overall, date(checkdate) AS month, date(checkdate) as mnthorder FROM plugin_lthc_scores_weekly WHERE checkdate > DATE_ADD(NOW(), INTERVAL -180 DAY) group by month order by mnthorder asc";
+$sql = "SELECT round(avg(antivirus),1) as antivirus, round(avg(disk),1) as disk, round(avg(intrusion),1) as intrusion, round(avg(usability),1) as usability, round(avg(services),1) as services, round(avg(updates),1) as updates, round(avg(`event_log`),1) as events, round(avg(`avg_score`),1) as overall, date(checkdate) AS month, date(checkdate) as mnthorder FROM plugin_lthc_scores_weekly WHERE checkdate > DATE_ADD(NOW(), INTERVAL -360 DAY) group by month order by mnthorder asc";
 
 $month = array();
 $month['name'] = 'Month';
