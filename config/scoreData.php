@@ -4,7 +4,7 @@ require('dbconnect.php');
 $clientid = $_REQUEST['clientid'];
 
 // Weekly Query
-$sql = $pdo->prepare("SELECT clientid, antivirus, disk, intrusion, usability, services, updates, `event_log` as events, `avg_score` as overall, date(checkdate) AS date FROM plugin_lthc_scores_weekly WHERE clientid= :clientid AND checkdate > DATE_ADD(NOW(), INTERVAL -180 DAY);");
+$sql = $pdo->prepare("SELECT clientid, antivirus, disk, intrusion, usability, services, updates, `event_log` as events, `avg_score` as overall, date(checkdate) AS date FROM plugin_lthc_scores_weekly WHERE clientid= :clientid AND checkdate > DATE_ADD(NOW(), INTERVAL -360 DAY);");
 $sql->execute(array('clientid' => $clientid));
 # Monthly Query
 //$sql = "SELECT clientid, antivirus, disk, intrusion, usability, services, updates, `event_log` as events, `avg_score` as overall, MONTHNAME(checkdate) AS month FROM plugin_lthc_scores_monthly WHERE clientid='{$clientid}'";
