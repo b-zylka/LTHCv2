@@ -32,7 +32,7 @@ $(document).ready(function() {
       echo "<tr>
       <td style='padding-left:10px;'><a href='clients.php?clientid=".$locInfo['clientid']. "'>" . $locInfo['cName'] . "</a></td>
       <td style='padding-left:10px;'><a href='locations.php?locationid=" . $locInfo['locationid'] . "'>" . $locInfo['lName'] . "</a></td>
-      <td style='padding-left:10px;'><a href='https://".LTURL."/Labtech/Deployment.aspx?Probe=1&ID=" . $locInfo['locationid'] . "'>EXE</a> &#9900; <a href='https://".LTURL."/Labtech/Deployment.aspx?Probe=1&MSILocations=" . $locInfo['locationid'] . "'>MSI</a></td>
+      <td style='padding-left:10px;'><a href='https://".LTURL."/Labtech/Deployment.aspx?Probe=1&ID=" . $locInfo['locationid'] . "'>EXE</a> &#9900; <a href='https://".LTURL."/Labtech/Deployment.aspx?Probe=1&MSILocations=" . $locInfo['locationid'] . "'>MSI</a>&#9900; <a href='https://".LTURL."/Labtech/Deployment.aspx?PROBE=1&Linux=1&ID=" . $locInfo['locationid'] . "'>Linux</a> &#9900; <a href='https://".LTURL."/Labtech/Deployment.aspx?PROBE=1&Linux=2&ID=" . $locInfo['locationid'] . "'>OS X</a></td>
       </tr>";
     } ?>
     <!-- https://".LTURL."/labtech/deployment.aspx?PROBE=1&Linux=1&ID=1 -->
